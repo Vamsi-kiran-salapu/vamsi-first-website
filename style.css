@@ -69,6 +69,7 @@ table {
     background-position: center;
     background-attachment: fixed;
     position: relative;
+    overflow: hidden;
     }
 #heading{
     position: absolute;
@@ -84,6 +85,7 @@ h1{
  #friend:visited{
      display: inline-block;
     padding: .7% 5%;
+     margin-bottom: 2%;
     border-radius: 200px;
      color:#fff;
      background-color: #e67e22;
