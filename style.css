@@ -51,11 +51,11 @@ table {
 *:before,
 *:after{
 	-webkit-box-sizing:border-box;
-	-moz-box-sizing:border-box;
 	 box-sizing:border-box;}
 body{
     overflow-x: hidden;
     overflow-y: scroll;
+    font-family: lato,arial,sans-serif;
 }
 /*======================================
 ========================================*/
@@ -64,6 +64,7 @@ body{
             SECTION MAIN
 ========================================*/
 .main{
+    background-image:-webkit-gradient(linear,left top, left bottom,from(rgba(0, 0, 0, 0.7)),to(rgba(0, 0, 0, 0.7))), url(img/hero.jpg);
     background-image:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(img/hero.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -72,7 +73,8 @@ body{
     background-position: center;
     background-attachment: fixed;
     position: relative;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: scroll;
     }
 #heading{
     position: absolute;
@@ -191,9 +193,102 @@ font-size: 400%;}
     height:500px;
     width: auto;
 }
+.gallery{background-color: #ececec;
+padding: 2% 1%;}
 
 /*======================================
 ========================================*/
+/*======================================
+          CITIES SECTION
+========================================*/
+.cities{padding: 5% 1%;}
+h4{color:#6d6e6f;
+font-weight: 300;
+font-family: lato,arial,sans-serif;}
+.city-icon{
+    font-size: 25px;
+    color: #e67e22;
+}
+.cities a{color: #e67e22;}
+.cities p{display:inline-block;}
+
+
+/*======================================
+========================================*/
+
+/*======================================
+            TESTIMONIAL SECTION
+========================================*/
+.testimonial{background-image:-webkit-gradient(linear,left top, left bottom,from(rgba(0, 0, 0, 0.7)),to(rgba(0, 0, 0, 0.7))), url(img/back-customers.jpg);background-image:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(img/back-customers.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    padding: 5% 1%;
+    }
+.testimonial h2{color: #fff;}
+.testimonial p{color: #fff;
+font-style: italic;}
+.testimonial p:before{
+    content: "\201C";
+    display: block;
+    width:50px;
+    height: auto;
+    color: #fff;
+    font-size: 400%;
+    margin-bottom: -20px;
+}
+cite{
+    font-size: 90%;
+    margin-top: 25px;
+    display: inline-block;
+    color: #fff;
+    
+}
+cite img{
+    height: 50px;
+    width: auto;
+    border-radius: 50%;
+    margin-right: 15px;
+    margin-left: 150px;
+    vertical-align:middle;
+    display: inline-block;
+}
+.testi-info{
+    padding: 5% 10%;
+}
+
+/*======================================
+========================================*/
+
+/*======================================
+========================================*/
+/*======================================
+            SIGN-UP SECTION
+========================================*/
+.sign-up{padding: 5% 1%;
+background-color: #ececec;}
+.sign-up-card{height: 60%;
+width: auto;
+background-color:#fff;
+}
+.sign-up span{color:#e67e22;
+font-size: 200%;}
+.form{padding: 5% 1%;}
+.foot-icon {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+/*======================================
+========================================*/
+
+
 
 /*======================================
             MEDIA QUERIES
@@ -207,10 +302,3 @@ font-size: 400%;}
     #navtext{font-size: 90%;
     margin: 2% 1%;}
 }
-
-
-
-
-
-
-
